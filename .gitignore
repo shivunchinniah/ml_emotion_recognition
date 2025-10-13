@@ -1,2 +1,4 @@
 *.pkl
 *.csv
+!data/fer2013.csv
+!svm_model.pkl
