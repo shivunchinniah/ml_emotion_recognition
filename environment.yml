@@ -1,0 +1,35 @@
+name: fer2013-pipeline
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - scikit-image
+  - imbalanced-learn
+  - opencv
+  - dlib
+  - cmake
+  - boost-cpp
+  - libgcc-ng
+  - libstdcxx-ng
+  - xorg-libx11
+  - xorg-libxext
+  - xorg-libxrender
+  - xorg-libxtst
+  - jupyterlab
+  - ipykernel
+  - pip
+  - pip:
+      - pyfume>=0.1.13
+      - simpful>=2.12
+      - anfis==0.3.1     # the separate ANFIS package
+      - torch>=1.13.1
+      - torchvision>=0.14.1
+      - torchaudio>=0.13.1
+      - tqdm>=4.64.1
+      - notebook>=6.4.12  
