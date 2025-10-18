@@ -1,4 +1,4 @@
-name: fer2013-pipeline
+name: emotion
 channels:
   - conda-forge
   - defaults
@@ -15,21 +15,14 @@ dependencies:
   - dlib
   - cmake
   - boost-cpp
-  - libgcc-ng
-  - libstdcxx-ng
-  - xorg-libx11
-  - xorg-libxext
-  - xorg-libxrender
-  - xorg-libxtst
   - jupyterlab
   - ipykernel
   - pip
+  - vc14_runtime
+  - ucrt
   - pip:
       - pyfume>=0.1.13
       - simpful>=2.12
-      - anfis==0.3.1   
-      - torch>=1.13.1
-      - torchvision>=0.14.1
-      - torchaudio>=0.13.1
+      - anfis==0.3.1
       - tqdm>=4.64.1
-      - notebook>=6.4.12  
+      - notebook>=6.4.12
