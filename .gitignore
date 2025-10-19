@@ -3,3 +3,4 @@
 !data/fer2013.csv
 !svm_model.pkl
 fearures/*
+artifacts/*.npz
