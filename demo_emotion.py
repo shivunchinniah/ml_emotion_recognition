@@ -19,7 +19,7 @@ import mediapipe as mp
 # ==============================
 # 1. Load trained model & tools
 # ==============================
-model_path = "models/best_pca_svm_C2_G0.03_PCA100.joblib"
+model_path = "models/SVM_best_PCA100_C2_G0.01_SMOTE.joblib"
 model = joblib.load(model_path)
 var_selector = joblib.load("models/var_selector.joblib")
 dropped_corr = np.load("models/dropped_corr.npy")
@@ -91,7 +91,8 @@ def main():
 
                 # --- Feature cleaning ---
                 feat_var = var_selector.transform(feat)
-                feat_clean = np.delete(feat_var, dropped_corr, axis=1) if dropped_corr.size > 0 else feat_var
+                feat_clean = np.delete(feat_var, dropped_corr, axis=1)
+
 
                 # --- Prediction ---
                 pred = int(model.predict(feat_clean)[0])
