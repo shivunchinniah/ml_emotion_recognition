@@ -1,6 +1,6 @@
 """
 Real-time Facial Emotion Recognition Demo
------------------------------------------
+----------------------------------------- 
 This script loads the trained emotion recognition model (HOG + Landmark features)
 and performs real-time facial expression classification from webcam input.
 
@@ -108,6 +108,7 @@ def main():
                 break
 
     finally:
+    # release meemory
         cap.release()
         cv2.destroyAllWindows()
         cv2.waitKey(1)
