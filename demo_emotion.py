@@ -5,7 +5,7 @@ This script loads the trained emotion recognition model (HOG + Landmark features
 and performs real-time facial expression classification from webcam input.
 
 Usage:
-    python demo_realtime_emotion.py
+    python demo_emotion.py
 
 Press 'q' to quit the demo window.
 """
