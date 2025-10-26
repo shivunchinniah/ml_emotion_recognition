@@ -19,9 +19,9 @@ import mediapipe as mp
 # ==============================
 # 1. Load trained model & tools
 # ==============================
-model_path = "models/SVM_best_PCA100_C2_G0.01_SMOTE.joblib"
+model_path = "models/SVM_best_PCA100_C2_G0.01_SMOTE.pkl"
 model = joblib.load(model_path)
-var_selector = joblib.load("models/var_selector.joblib")
+var_selector = joblib.load("models/var_selector.pkl")
 dropped_corr = np.load("models/dropped_corr.npy")
 
 # Emotion labels
